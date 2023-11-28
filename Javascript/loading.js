@@ -1,3 +1,3 @@
 setTimeout(function() {
     $('.loader').fadeOut('slow');
-}, 1500);
+}, 3000);
