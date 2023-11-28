@@ -1,0 +1,37 @@
+.loader {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 10px rgb(255, 255, 255) solid;
+    border-top-color: rgb(65, 65, 65);
+    border-radius: 50%;
+    animation: loading 0.50s ease infinite;
+}
+
+@keyframes loading {
+        from{
+            transform: rotate(0turn);
+        }
+        to{
+            transform: rotate(1turn);
+        }
+    }
+
