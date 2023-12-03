@@ -919,7 +919,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   transition: opacity 0.75s, visibility 0.75s;
   z-index: 0;
 }
