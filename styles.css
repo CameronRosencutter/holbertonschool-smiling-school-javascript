@@ -291,6 +291,10 @@
 
 /* POPULAR SECTION  */
 
+#carouselExampleControls2 {
+  display: none;
+}
+
 .popular {
   height: auto;
   background-color: var(--color-white);
