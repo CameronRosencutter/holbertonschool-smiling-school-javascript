@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     appendNewSlide(
-        "images/profile_1.jpg",
-        "What the...? Where am I? Whats going on?",
-        "Who even knows who this is",
-        "Guy"
-      );
+      "images/profile_1.jpg",
+      "What the...? Where am I? Whats going on?",
+      "Who even knows who this is",
+      "Guy"
+    );
   });
