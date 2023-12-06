@@ -946,3 +946,8 @@
           transform: rotate(1turn);
       }
   }
+
+
+  #carouselExampleControls3 {
+    display: none;
+  }

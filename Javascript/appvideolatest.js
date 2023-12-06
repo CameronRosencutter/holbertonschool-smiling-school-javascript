@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var carouselInner = document.querySelector(".videocarousel");
+    var carouselInner = document.querySelector(".videocarousel2");
     var currentIndex = 0;
 
     function appendNewvideo(thumbnails, titles, descs, icons, names, ratings) {
@@ -47,15 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     appendNewvideo(
-      ["thumbnail_2.jpg", "thumbnail_1.jpg", "thumbnail_4.jpg", "thumbnail_3.jpg"],
-      ["Glasses Smile", "Passive Aggresive Smile", "Upside down Smile", "Toothy Smile"],
+      ["thumbnail_4.jpg", "thumbnail_3.jpg", "thumbnail_2.jpg", "thumbnail_1.jpg"],
+      ["Fast Smile", "Jumping Smile", "Metroid Smile", "Triforce Smile"],
       ["Description 1", "Description 2", "Description 3", "Description 4"],
-      ["profile_4.jpg", "profile_1.jpg", "profile_3.jpg", "profile_1.jpg"],
-      ["Bobby Moonbeam", "Ashley", "Phil", "Ashley"],
-      [4, 1, 4, 3]  // Ratings for each video
+      ["profile_3.jpg", "profile_3.jpg", "profile_2.jpg", "profile_4.jpg"],
+      ["Sonic", "Mario", "Samus", "Link"],
+      [1, 5, 3, 4]  // Ratings for each video
     );
 
-    var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls2'), {
+    var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls3'), {
       interval: false
     });
 
@@ -63,13 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function prevSlide() {
-    var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls2'));
+    var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls3'));
     currentIndex = currentIndex > 0 ? currentIndex - 1 : 0;
     carousel.to(currentIndex);
   }
 
   function nextSlide() {
-    var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls2'));
+    var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls3'));
     currentIndex = currentIndex < carouselInner.children.length - 1 ? currentIndex + 1 : carouselInner.children.length - 1;
     carousel.to(currentIndex);
   }
