@@ -834,12 +834,12 @@
   mix-blend-mode: normal;
 }
 
-.search .dropdown .btn span {
+.dropdown a span {
   color: var(--color-white);
   font-weight: 300;
   font-size: 23px;
 }
-.search .dropdown .btn:after {
+.dropdown a:after {
   color: var(--color-white);
   right: 12px;
   top: 50%;
